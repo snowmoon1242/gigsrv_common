@@ -15,7 +15,7 @@ PARAM_DESCRIBE=""
 COMMON_LOG_DIR=/var/log/common
 COMMON_LOG_FILE=gigjob
 LOG_PATH=$COMMON_LOG_DIR/$COMMON_LOG_FILE.log
-SENDMAIL_SHELL=/etc/gigcommon/gig_sendmail.sh
+SENDMAIL_SHELL=$MY_PATH/gig_sendmail.sh
 WAKEUP_DATESTR=`date +"%Y/%m/%d,%H:%M:%S"`
 
 #引数チェック

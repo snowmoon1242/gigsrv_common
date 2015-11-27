@@ -21,7 +21,7 @@ echo "$WAKEUP_DATESTR ,[INFO],$SHELL_NAME,wakeup on $MY_PATH" >> $LOG_PATH
 #このシェル固有の設定
 UPGLOG=/var/log/clamav/upgraderesult.txt
 CHKLOG=/var/log/clamav/scanresult.txt
-CALL_SHELL=/etc/gigcommon/gig_sendmail_clamav_checkresult.sh
+CALL_SHELL=$MY_PATH/gig_sendmail_clamav_checkresult.sh
 excludelist=/etc/clamav/clamscan.exclude
 
 # clamd本体のアップグレード
