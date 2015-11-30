@@ -27,6 +27,8 @@ CALL_SHELL=$MY_PATH/gig_sendmail_aide_checkresult.sh
 
 #スキャン実施
 $AIDE_COMMAND --config=$AIDE_RULE $AIDE_OPTION > $SCANLOG
+#更新後のDBを旧DBと差し替え
+mv /var/lib/aide/aide.db.new /var/lib/aide/aide.db 
 
 #スキャン結果を確認するシェルへの引き継ぎ
 TMPDATESTR=`date +"%Y/%m/%d,%H:%M:%S"`
