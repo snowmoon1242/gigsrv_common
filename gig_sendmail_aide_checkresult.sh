@@ -56,7 +56,7 @@ echo "[mail body]" > $BODYFILE
 cat $CHKLOG | grep "Number of entries" >> $BODYFILE
 cat $CHKLOG | grep "Start timestamp" >> $BODYFILE
 cat $CHKLOG | grep "End timestamp" >> $BODYFILE
-echo "================= Change Logs ========================" > $BODYFILE
+echo "================= Change Logs ========================" >> $BODYFILE
 cat $CHKLOG | grep added >> $BODYFILE
 cat $CHKLOG | grep changed >> $BODYFILE
 
