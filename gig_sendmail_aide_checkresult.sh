@@ -41,7 +41,7 @@ ERRLVL=INFO
 
 #変更検出の有無を判定するためのチェック
 #cat $CHKLOG | grep "Infected files: 0"の結果が0なら、感染したファイル1つ以上
-if [ -z "$(cat $CHKLOG | grep "Looks okay" ]; then
+if [ -z "$(cat $CHKLOG | grep "Looks okay")" ]; then
       TMPDATESTR=`date +"%Y/%m/%d,%H:%M:%S"`
       echo "$TMPDATESTR ,[WARN],$SHELL_NAME, Find change !" >> $LOG_PATH
       ERRLVL=WARN
